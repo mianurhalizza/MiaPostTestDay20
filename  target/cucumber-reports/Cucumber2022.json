@@ -1,0 +1,419 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-07-18T14:19:20.164Z",
+        "line": 3,
+        "name": "Login dengan kredensial valid",
+        "description": "",
+        "id": "login-aplikasi-gtpl-bank;login-dengan-kredensial-valid",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 15521839200,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User sedang berada di halaman login",
+            "match": {
+              "location": "definisions.LoginDefinitions.user_sedang_berada_di_halaman_login()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 78842900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User memasukan user ID \"mngr422725\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"mngr422725\"",
+                  "offset": 23
+                }
+              ],
+              "location": "definisions.LoginDefinitions.user_memasukan_user_ID_mngr422725(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 57806300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User memasukan password \"ebUsypa\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"ebUsypa\"",
+                  "offset": 24
+                }
+              ],
+              "location": "definisions.LoginDefinitions.user_memasukan_password(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 400797400,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User menekan tombol login dan sistem memprosesnya",
+            "match": {
+              "location": "definisions.LoginDefinitions.user_menekan_tombol_login_dan_sistem_memprosesnya()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoAlertPresentException: no such alert\n  (Session info: chrome\u003d103.0.5060.114)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027LAPTOP-DKCLFGJU\u0027, ip: \u0027192.168.1.125\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002717.0.2\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\\Users\\irsya\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55005}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: c7f7346ce704c26d5933b13df6da28f0\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.alert(RemoteWebDriver.java:932)\r\n\tat definisions.LoginDefinitions.user_harus_berada_di_halaman(LoginDefinitions.java:49)\r\n\tat ✽.User harus berada di halaman \"Welcome To Manager\u0027s Page of GTPL Bank\"(file:///C:/Users/irsya/eclipse-workspace/belajarcucumber2/src/test/resources/features/Login.feature:8)\r\n",
+              "duration": 3746478800,
+              "status": "failed"
+            },
+            "line": 8,
+            "name": "User harus berada di halaman \"Welcome To Manager\u0027s Page of GTPL Bank\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Welcome To Manager\u0027s Page of GTPL Bank\"",
+                  "offset": 29
+                }
+              ],
+              "location": "definisions.LoginDefinitions.user_harus_berada_di_halaman(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-18T14:19:40.026Z",
+        "line": 10,
+        "name": "Login dengan kredensial tidak valid",
+        "description": "",
+        "id": "login-aplikasi-gtpl-bank;login-dengan-kredensial-tidak-valid",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 8961160100,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User sedang berada di halaman login",
+            "match": {
+              "location": "definisions.LoginDefinitions.user_sedang_berada_di_halaman_login()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 61329700,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User memasukan user ID \"mngr422725\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"mngr422725\"",
+                  "offset": 23
+                }
+              ],
+              "location": "definisions.LoginDefinitions.user_memasukan_user_ID_mngr422725(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 66776800,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User memasukan password \"ebUszdc\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"ebUszdc\"",
+                  "offset": 24
+                }
+              ],
+              "location": "definisions.LoginDefinitions.user_memasukan_password(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 403842700,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User menekan tombol login dan sistem memprosesnya",
+            "match": {
+              "location": "definisions.LoginDefinitions.user_menekan_tombol_login_dan_sistem_memprosesnya()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 15,
+            "name": "User harus melihat alert berisi \"User is not valid\"",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Login aplikasi GTPL Bank",
+    "description": "",
+    "id": "login-aplikasi-gtpl-bank",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Login.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-07-18T14:19:49.531Z",
+        "line": 9,
+        "name": "Periksa string palindrome",
+        "description": "",
+        "id": "check-string-palindrome;periksa-string-palindrome;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Saya masukin string \"bebeb\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"bebeb\"",
+                  "offset": 20
+                }
+              ],
+              "location": "definisions.PalindromeDefinisions.Saya_masukin_string(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Saya test apakah palindrome",
+            "match": {
+              "location": "definisions.PalindromeDefinisions.Saya_test_apakah_palindrome()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3987800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "hasilnya harus \"true\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"true\"",
+                  "offset": 15
+                }
+              ],
+              "location": "definisions.PalindromeDefinisions.hasilnya_harus(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-18T14:19:49.545Z",
+        "line": 10,
+        "name": "Periksa string palindrome",
+        "description": "",
+        "id": "check-string-palindrome;periksa-string-palindrome;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Saya masukin string \"kodok\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"kodok\"",
+                  "offset": 20
+                }
+              ],
+              "location": "definisions.PalindromeDefinisions.Saya_masukin_string(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Saya test apakah palindrome",
+            "match": {
+              "location": "definisions.PalindromeDefinisions.Saya_test_apakah_palindrome()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "hasilnya harus \"true\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"true\"",
+                  "offset": 15
+                }
+              ],
+              "location": "definisions.PalindromeDefinisions.hasilnya_harus(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-18T14:19:49.551Z",
+        "line": 11,
+        "name": "Periksa string palindrome",
+        "description": "",
+        "id": "check-string-palindrome;periksa-string-palindrome;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Saya masukin string \"mobil\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"mobil\"",
+                  "offset": 20
+                }
+              ],
+              "location": "definisions.PalindromeDefinisions.Saya_masukin_string(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Saya test apakah palindrome",
+            "match": {
+              "location": "definisions.PalindromeDefinisions.Saya_test_apakah_palindrome()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "hasilnya harus \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"false\"",
+                  "offset": 15
+                }
+              ],
+              "location": "definisions.PalindromeDefinisions.hasilnya_harus(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-18T14:19:49.558Z",
+        "line": 12,
+        "name": "Periksa string palindrome",
+        "description": "",
+        "id": "check-string-palindrome;periksa-string-palindrome;;5",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Saya masukin string \"motor\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"motor\"",
+                  "offset": 20
+                }
+              ],
+              "location": "definisions.PalindromeDefinisions.Saya_masukin_string(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Saya test apakah palindrome",
+            "match": {
+              "location": "definisions.PalindromeDefinisions.Saya_test_apakah_palindrome()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "hasilnya harus \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"false\"",
+                  "offset": 15
+                }
+              ],
+              "location": "definisions.PalindromeDefinisions.hasilnya_harus(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Check string palindrome",
+    "description": "",
+    "id": "check-string-palindrome",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Palindrome.feature",
+    "tags": []
+  }
+]
